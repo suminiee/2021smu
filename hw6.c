@@ -13,13 +13,20 @@ int main(void)
 		temp = *fptr;
 		*fptr = *bptr;
 		*bptr = temp;
-		fptr += 1;
-		bptr += 1;
+		fptr = fptr + 1;
+		bptr = bptr + 1;
+
 	}
+	printf("arr1: ");
 	for (i = 0; i < 6; i++)
 	{
-		printf("%d", arr1[i]);
-		printf("%d", arr2[i]);
+		printf("%d ", arr1[i]);
+	}
+
+	printf("arr2: ");
+	for (i = 0; i < 6; i++)
+	{
+		printf("%d ", arr2[i]);
 	}
 	return 0;
 
